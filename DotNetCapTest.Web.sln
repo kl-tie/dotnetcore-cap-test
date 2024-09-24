@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35208.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCapTest.Web", "DotNetCapTest.Web\DotNetCapTest.Web.csproj", "{473F0AB4-9D9D-4F44-96AB-A359F89CDD99}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A9BA9690-F4E1-4AD3-9827-6014B1413B0A}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCap.Publisher", "DotNetCap.Publisher\DotNetCap.Publisher.csproj", "{A69B0DE4-96CE-403B-92AC-DAA20651EDE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{473F0AB4-9D9D-4F44-96AB-A359F89CDD99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{473F0AB4-9D9D-4F44-96AB-A359F89CDD99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{473F0AB4-9D9D-4F44-96AB-A359F89CDD99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{473F0AB4-9D9D-4F44-96AB-A359F89CDD99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A69B0DE4-96CE-403B-92AC-DAA20651EDE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A69B0DE4-96CE-403B-92AC-DAA20651EDE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A69B0DE4-96CE-403B-92AC-DAA20651EDE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A69B0DE4-96CE-403B-92AC-DAA20651EDE5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0A36CCD-E4D6-486B-99B6-EAD70A98B31A}
+	EndGlobalSection
+EndGlobal
