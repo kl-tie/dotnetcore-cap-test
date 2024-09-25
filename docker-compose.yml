@@ -71,6 +71,21 @@ services:
     depends_on:
       - redpanda-0
 
+  postgres:
+    container_name: postgres
+    image: postgres:16
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 2G
+    networks:
+      - redpanda_network
+    environment:
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - 5432:5432
+
   test-app:
     container_name: test-app
     image: test-app
@@ -81,10 +96,11 @@ services:
           memory: 2G
     environment:
        Kafka__Brokers: redpanda-0:9092
-       ConnectionStrings__Default: Host=host.docker.internal;Username=postgres;Password=postgres;Database=myapp;
+       ConnectionStrings__Default: Host=postgres;Username=postgres;Password=postgres;Database=myapp;
     networks:
       - redpanda_network
     ports:
       - 1234:80
     depends_on:
       - redpanda-0
+      - postgres
